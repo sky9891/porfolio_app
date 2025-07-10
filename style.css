@@ -94,7 +94,7 @@ body {
 .section-title {
   font-size: 2.3rem;
   margin-bottom: 40px;
-  color: #1f2d5a;
+  color: #1f2d5a; /* default color */
 }
 .projects-grid {
   display: flex;
@@ -189,9 +189,11 @@ body {
   padding: 60px 20px;
   text-align: center;
 }
-.section-title{
+/* Override title color just for contact section */
+.contact-section .section-title {
   color: #e3e9ff;
 }
+
 .contact-text {
   font-size: 1.1rem;
   margin-top: 15px;
@@ -207,7 +209,6 @@ body {
   text-decoration: underline;
   color: #1a8cff;
 }
-
 
 /* Contact icons */
 .contact-text i {
