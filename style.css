@@ -1,0 +1,260 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: grey;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Utility */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: #0d1117;
+  padding: 20px 0;
+  color: #fff;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.highlight {
+  color: #58a6ff;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-list a:hover {
+  color: #58a6ff;
+}
+
+/* Intro Section */
+.intro-section {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.intro-content {
+  max-width: 700px;
+  margin: auto;
+}
+.intro-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.primary-button {
+  background-color: #fff;
+  color: #2575fc;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.primary-button:hover {
+  background-color: #f0f4ff;
+  color: #1a56d0;
+  transform: translateY(-2px);
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #f4f7ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.section-title {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #1f2d5a;
+}
+.projects-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.project-title {
+  font-size: 1.4rem;
+  color: #2575fc;
+  margin-bottom: 15px;
+}
+.project-desc {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+.card-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #2575fc;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.card-button:hover {
+  background-color: #1a56d0;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+/* Hover effect on skills */
+.skills-list li {
+  background-color: #e3e9ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.skills-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background-color: #d4deff;
+}
+
+/* About Section */
+.about-section {
+  padding: 70px 20px;
+  background-color: #fefefe;
+  text-align: center;
+}
+.about-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #0d1117;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.section-title{
+  color: #e3e9ff;
+}
+.contact-text {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+.email-link,
+.linkedin-link {
+  color: #58a6ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.email-link:hover,
+.linkedin-link:hover {
+  text-decoration: underline;
+  color: #1a8cff;
+}
+
+
+/* Contact icons */
+.contact-text i {
+  margin-right: 8px;
+  color: #58a6ff;
+}
+
+/* Phone link style */
+.phone-link {
+  color: #58a6ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.phone-link:hover {
+  text-decoration: underline;
+  color: #1a8cff;
+}
+
+/* Scroll Fade Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-heading {
+    font-size: 2rem;
+  }
+  .skills-list {
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
